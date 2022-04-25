@@ -54,9 +54,9 @@ string(REPLACE "." "_" OCTANE_BOOST_FILE_VERSION ${OCTANE_BOOST_VERSION})
 
 if (NOT DEFINED OCTANE_BOOST_URL)
     set(OCTANE_BOOST_URL $ENV{OCTANE_BOOST_URL})
-
+    
     if (NOT DEFINED OCTANE_BOOST_URL)
-        set(OCTANE_BOOST_URL "https://dl.bintray.com/boostorg/release/${OCTANE_BOOST_VERSION}/source/boost_${OCTANE_BOOST_FILE_VERSION}.tar.gz")
+        set(OCTANE_BOOST_URL "https://boostorg.jfrog.io/artifactory/main/release/${OCTANE_BOOST_VERSION}/source/boost_${OCTANE_BOOST_FILE_VERSION}.tar.gz")
     endif()
 endif()
 
